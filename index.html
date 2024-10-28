@@ -1,0 +1,24 @@
+<!--Task 1: Set Up the HTML Structure-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Order Management</title>
+</head>
+<body>
+    <canvas id="mainCanvas" width="700px" height="300px" style="border: 1px solid black;"></canvas>
+    <script src="app.js"></script>
+
+    <br>
+    <p> Select Drawing Tool: </p>
+    <input type="radio" id="toolSelectLine" name="selectDrawTool" value="line" checked onchange="chooseTool()"> Line
+    <input type="radio" id="toolSelectRectangle" name="selectDrawTool" value="rectangle" onchange="chooseTool()"> Rectangle
+    <input type="radio" id="toolSelectCircle" name="selectDrawTool" value="circle" onchange="chooseTool()"> Circle
+
+    <br>
+
+    Select Color: <input type="color" id="colorPicker" value="#000000" onchange="chooseColor()">
+
+    <input type="button" value="Clear Canvas" onclick="clearCanvas()">
+</body>
