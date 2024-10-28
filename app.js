@@ -80,3 +80,16 @@ function drawCircle(x, y, radius) {
     context.arc(x, y, radius, 0, Math.PI * 2);
     context.stroke();
 }
+
+//Task 4: Add Color Selection and Canvas Clearing
+
+// Choose color
+function chooseColor() {
+    let color = document.getElementById("colorPicker").value;
+    context.strokeStyle = color;
+}
+
+// Clear canvas
+function clearCanvas() {
+    context.clearRect(0, 0, canvas.width, canvas.height);
+}
